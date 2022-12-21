@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vu3 组件库的设计和实现原理</title>
+</head>
+<body>
+    <a href="https://juejin.cn/post/7143196940992413709">Element Plus 组件库相关技术揭秘</a>
+    <div id="app"></div>
+    <script tye="module">
+        import { createApp } from './mini-vue3.js';
+        import  { App } from './App.js';
+        import { ElementPlus } from './element-plus.js';
+        const app = createApp();
+        app.use(ElementPlus);
+        app.amount(document.querySelector('#app'));
+    </script>
+</body>
+</html>
